@@ -127,25 +127,25 @@ export default function Training() {
               </div>
             </div>
 
-            <div className="w-full lg:w-[500px] bg-white rounded-3xl p-8 shadow-2xl">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Workshop Registration</h3>
+            <div className="w-full lg:w-[500px] bg-white dark:bg-white/10 dark:backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-transparent dark:border-white/10">
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Workshop Registration</h3>
               <form className="space-y-4" onSubmit={(e) => { e.preventDefault(); alert('Registration sent! We will contact you shortly.'); }}>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <input type="text" placeholder="Full Name *" className="w-full px-5 py-3 rounded-xl border border-gray-100 bg-gray-50 text-gray-900 focus:ring-2 focus:ring-blue-500 outline-none" required />
-                  <input type="email" placeholder="Email Address *" className="w-full px-5 py-3 rounded-xl border border-gray-100 bg-gray-50 text-gray-900 focus:ring-2 focus:ring-blue-500 outline-none" required />
+                  <input type="text" placeholder="Full Name *" className="w-full px-5 py-3 rounded-xl border border-gray-100 dark:border-white/10 bg-gray-50 dark:bg-white/5 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 outline-none" required />
+                  <input type="email" placeholder="Email Address *" className="w-full px-5 py-3 rounded-xl border border-gray-100 dark:border-white/10 bg-gray-50 dark:bg-white/5 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 outline-none" required />
                 </div>
-                <input type="tel" placeholder="WhatsApp Number *" className="w-full px-5 py-3 rounded-xl border border-gray-100 bg-gray-50 text-gray-900 focus:ring-2 focus:ring-blue-500 outline-none" required />
-                <select className="w-full px-5 py-3 rounded-xl border border-gray-100 bg-gray-50 text-gray-900 focus:ring-2 focus:ring-blue-500 outline-none appearance-none" required>
-                  <option value="">Select Workshop *</option>
-                  <option>Implant Masterclass - March</option>
-                  <option>Bone Grafting - April</option>
-                  <option>CBCT Webinar - May</option>
+                <input type="tel" placeholder="WhatsApp Number *" className="w-full px-5 py-3 rounded-xl border border-gray-100 dark:border-white/10 bg-gray-50 dark:bg-white/5 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 outline-none" required />
+                <select className="w-full px-5 py-3 rounded-xl border border-gray-100 dark:border-white/10 bg-gray-50 dark:bg-white/5 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 outline-none appearance-none" required>
+                  <option value="" className="dark:text-gray-900">Select Workshop *</option>
+                  <option className="dark:text-gray-900">Implant Masterclass - March</option>
+                  <option className="dark:text-gray-900">Bone Grafting - April</option>
+                  <option className="dark:text-gray-900">CBCT Webinar - May</option>
                 </select>
-                <textarea placeholder="Any clinical background or specific requirements?" className="w-full px-5 py-3 rounded-xl border border-gray-100 bg-gray-50 text-gray-900 focus:ring-2 focus:ring-blue-500 outline-none min-h-[100px] resize-none"></textarea>
+                <textarea placeholder="Any clinical background or specific requirements?" className="w-full px-5 py-3 rounded-xl border border-gray-100 dark:border-white/10 bg-gray-50 dark:bg-white/5 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 outline-none min-h-[100px] resize-none"></textarea>
                 <button type="submit" className="w-full py-4 bg-blue-600 text-white font-bold rounded-xl hover:bg-blue-700 transition-all shadow-xl shadow-blue-500/30">
                   Book My Slot Today
                 </button>
-                <p className="text-[10px] text-gray-400 text-center mt-4 uppercase tracking-widest font-bold">
+                <p className="text-[10px] text-gray-400 dark:text-gray-400 text-center mt-4 uppercase tracking-widest font-bold">
                   Secure checkout powered by Kindway BioReZens
                 </p>
               </form>

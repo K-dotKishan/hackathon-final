@@ -19,7 +19,9 @@
   --text-light: #7f8c8d;
   --dark-bg-gradient: linear-gradient(180deg, #0b1220 0%, #0f1a2f 50%, #0b1324 100%);
   --dark-heading: #ffffff;
-  --dark-text: #a9b4c7;
+  --dark-text: #d1d9e6;
+  /* Brighter soft gray for better readability */
+  --dark-text-muted: #a9b4c7;
 }
 
 body {
@@ -28,7 +30,8 @@ body {
   @apply bg-white text-gray-800 transition-colors duration-300;
 }
 
-.dark {
+.dark body,
+body.dark {
   background: var(--dark-bg-gradient) fixed;
   color: var(--dark-text);
 }
@@ -38,13 +41,44 @@ body {
 .dark h3,
 .dark h4,
 .dark h5,
-.dark h6 {
-  color: #ffffff !important;
+.dark h6,
+.dark strong,
+.dark b,
+.dark .title-w3l,
+.dark .title-left {
+  color: var(--dark-heading) !important;
 }
 
 .dark p,
-.dark span:not(.btn-primary-custom *):not(.badge *) {
-  color: #a9b4c7 !important;
+.dark span,
+.dark li,
+.dark label,
+.dark td,
+.dark th,
+.dark a:not([class*="btn-"]):not([class*="social-link"]),
+.dark div:not([class*="bg-white"]):not([class*="bg-blue-600"]):not([class*="bg-yellow-"]) {
+  color: var(--dark-text);
+}
+
+.dark .text-gray-600,
+.dark .text-gray-700,
+.dark .text-gray-800,
+.dark .text-gray-900 {
+  color: var(--dark-text) !important;
+}
+
+.dark .text-gray-500,
+.dark .text-gray-400 {
+  color: var(--dark-text-muted) !important;
+}
+
+/* Ensure icons are visible */
+.dark i:not(.text-accent-yellow):not(.text-blue-600):not(.fa-whatsapp) {
+  color: var(--dark-text-muted);
+}
+
+.dark a:not(.btn-primary-custom):not([class*="social-link"]) {
+  @apply hover:text-white transition-colors;
 }
 
 /* Custom Typography */

@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import PageBanner from '../components/PageBanner'
-import contactBg from '../assets/images/contact.webp'
+import bannerBg from '../assets/images/bg2.webp'
+import sideImg from '../assets/images/b2.webp'
 
 export default function Contact() {
     const [form, setForm] = useState({
@@ -33,7 +34,7 @@ export default function Contact() {
         <main className="bg-white dark:bg-transparent">
             <PageBanner
                 title="Contact Us"
-                bgImage={contactBg}
+                bgImage={bannerBg}
             />
 
             {/* Contact Form + Image */}
@@ -45,7 +46,7 @@ export default function Contact() {
                         {/* Image */}
                         <div className="flex-shrink-0 w-full lg:w-80 xl:w-96">
                             <img
-                                src={contactBg}
+                                src={sideImg}
                                 alt="Contact"
                                 className="radius-image shadow-xl w-full h-auto"
                             />
@@ -176,7 +177,7 @@ export default function Contact() {
                                 className="bg-white dark:bg-white/10 dark:backdrop-blur-sm rounded-xl p-6 shadow-md flex items-start gap-4 hover:shadow-lg transition-shadow border border-transparent dark:border-white/5"
                             >
                                 <div
-                                    className={`w-12 h-12 rounded-full ${item.color} flex items-center justify-center flex-shrink-0`}
+                                    className={`w-12 h-12 rounded-full ${item.color} dark:bg-blue-600/20 dark:text-blue-400 flex items-center justify-center flex-shrink-0`}
                                 >
                                     <i className={`fa ${item.icon} text-lg`}></i>
                                 </div>
