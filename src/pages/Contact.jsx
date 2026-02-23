@@ -9,7 +9,7 @@ export default function Contact() {
         website: '',
         message: '',
     })
-    const [submitted, setSubmitted] = useState(false)
+    const [status, setStatus] = useState({ loading: false, type: '', message: '' })
 
     const handleChange = (e) => {
         setForm({ ...form, [e.target.name]: e.target.value })
@@ -17,9 +17,15 @@ export default function Contact() {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        setSubmitted(true)
-        setTimeout(() => setSubmitted(false), 4000)
-        setForm({ name: '', email: '', subject: '', website: '', message: '' })
+
+        const mailtoUrl = `mailto:kishansingh2882004@gmail.com?subject=${encodeURIComponent(form.subject || 'Inquiry from Website')}&body=${encodeURIComponent(
+            `Name: ${form.name}\nEmail: ${form.email}\nWebsite: ${form.website}\n\nMessage:\n${form.message}`
+        )}`;
+
+        window.location.href = mailtoUrl;
+
+        setStatus({ type: 'success', message: '✓ Opening your email application...' })
+        setTimeout(() => setStatus({ type: '', message: '' }), 5000)
     }
 
     return (
@@ -47,9 +53,12 @@ export default function Contact() {
 
                         {/* Form */}
                         <div className="flex-1 w-full">
-                            {submitted && (
-                                <div className="mb-6 p-4 bg-green-50 dark:bg-green-900/30 border border-green-200 dark:border-green-700 rounded-lg text-green-700 dark:text-green-400 font-semibold">
-                                    ✓ Your message has been sent successfully!
+                            {status.message && (
+                                <div className={`mb-6 p-4 rounded-lg font-semibold transition-all ${status.type === 'success'
+                                    ? 'bg-green-50 dark:bg-green-900/30 border border-green-200 dark:border-green-700 text-green-700 dark:text-green-400'
+                                    : 'bg-red-50 dark:bg-red-900/30 border border-red-200 dark:border-red-700 text-red-700 dark:text-red-400'
+                                    }`}>
+                                    {status.message}
                                 </div>
                             )}
                             <form onSubmit={handleSubmit} className="space-y-4">
@@ -100,8 +109,16 @@ export default function Contact() {
                                     className="contact-input resize-none"
                                 />
                                 <div className="flex justify-end">
-                                    <button type="submit" className="btn-primary-custom min-w-[160px]">
-                                        Send Message
+                                    <button
+                                        type="submit"
+                                        disabled={status.loading}
+                                        className={`btn-primary-custom min-w-[160px] ${status.loading ? 'opacity-70 cursor-not-allowed' : ''}`}
+                                    >
+                                        {status.loading ? (
+                                            <span className="flex items-center gap-2">
+                                                <i className="fa fa-spinner animate-spin"></i> Sending...
+                                            </span>
+                                        ) : 'Send Message'}
                                     </button>
                                 </div>
                             </form>
@@ -142,15 +159,15 @@ export default function Contact() {
                             {
                                 icon: 'fa-envelope-o',
                                 title: 'Email Us',
-                                text: 'kindwaybiorezens@gmail.com',
-                                link: 'mailto:kindwaybiorezens@gmail.com',
+                                text: 'kishansingh2882004@gmail.com',
+                                link: 'mailto:kishansingh2882004@gmail.com',
                                 color: 'bg-blue-100 text-blue-600',
                             },
                             {
                                 icon: 'fa-life-ring',
                                 title: 'Customer Support',
-                                text: 'kindwaybiorezens@gmail.com',
-                                link: 'mailto:kindwaybiorezens@gmail.com',
+                                text: 'kishansingh2882004@gmail.com',
+                                link: 'mailto:kishansingh2882004@gmail.com',
                                 color: 'bg-purple-100 text-purple-600',
                             },
                         ].map((item, idx) => (
