@@ -1,14 +1,14 @@
 import PageBanner from '../components/PageBanner'
 
 const galleryImages = [
-  'team1.jpg', 'team2.jpg', 'team3.jpg', 'team4.jpg',
-  'team5.jpg', 'team6.jpg', 'team7.jpg', 'team8.jpg',
-  'cam1.jpg', 'cam2.jpg', 'cam3.jpg', 'cam4.jpg'
+  'team1.webp', 'team2.webp', 'team3.webp', 'team4.webp',
+  'team5.webp', 'team6.webp', 'team7.webp', 'team8.webp',
+  'cam1.webp', 'cam2.webp', 'cam3.webp', 'cam4.webp'
 ].map(img => new URL(`../assets/images/${img}`, import.meta.url).href)
 
 export default function Gallery() {
   return (
-    <main className="bg-white dark:bg-gray-900">
+    <main className="bg-white dark:bg-transparent">
       <PageBanner title="Gallery" />
       <section className="py-16">
         <div className="container mx-auto px-4 text-center">
@@ -30,7 +30,7 @@ export default function Gallery() {
         </div>
       </section>
 
-      <section className="py-16 bg-gray-50 dark:bg-gray-800 border-t border-gray-100 dark:border-gray-700">
+      <section className="py-16 bg-gray-50 dark:bg-white/5 border-t border-gray-100 dark:border-white/5">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <span className="title-subhny">Clinical Proof</span>
@@ -40,10 +40,10 @@ export default function Gallery() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {[
-              { title: 'Full Arch Restoration', desc: 'Case study of severe bone loss treated with Kindway Bio-Graft and All-on-4 implants.', before: new URL('../assets/images/b4.jpg', import.meta.url).href, after: new URL('../assets/images/bg2.jpg', import.meta.url).href },
-              { title: 'Single Lateral Incsor', desc: 'Aesthetic replacement using Type 4 Titanium SLA implant with immediate loading.', before: new URL('../assets/images/b5.jpg', import.meta.url).href, after: new URL('../assets/images/bg1.jpg', import.meta.url).href },
+              { title: 'Full Arch Restoration', desc: 'Case study of severe bone loss treated with Kindway Bio-Graft and All-on-4 implants.', before: new URL('../assets/images/b4.webp', import.meta.url).href, after: new URL('../assets/images/bg2.webp', import.meta.url).href },
+              { title: 'Single Lateral Incsor', desc: 'Aesthetic replacement using Type 4 Titanium SLA implant with immediate loading.', before: new URL('../assets/images/b5.webp', import.meta.url).href, after: new URL('../assets/images/bg1.webp', import.meta.url).href },
             ].map((caseStudy, i) => (
-              <div key={i} className="bg-white dark:bg-gray-900 p-6 rounded-3xl shadow-xl">
+              <div key={i} className="bg-white dark:bg-white/10 dark:backdrop-blur-sm p-6 rounded-3xl shadow-xl border border-transparent dark:border-white/5">
                 <div className="flex gap-2 mb-6">
                   <div className="flex-1 text-center font-bold text-xs uppercase tracking-widest text-gray-400">Before</div>
                   <div className="flex-1 text-center font-bold text-xs uppercase tracking-widest text-blue-600 font-black">After Results</div>

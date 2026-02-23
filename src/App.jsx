@@ -11,6 +11,8 @@ import MobileClinic from './pages/MobileClinic'
 import Training from './pages/Training'
 import Contact from './pages/Contact'
 import Gallery from './pages/Gallery'
+import Director from './pages/Director'
+import Research from './pages/Research'
 import ScrollToTop from './components/ScrollToTop'
 
 function App() {
@@ -31,7 +33,7 @@ function App() {
     <HashRouter>
       <ScrollToTop />
       <div className={darkMode ? 'dark' : ''}>
-        <div className="min-h-screen bg-white dark:bg-gray-900 font-quicksand">
+        <div className="min-h-screen bg-white dark:bg-transparent font-quicksand">
           <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
           <Routes>
             <Route path="/" element={<Home />} />
@@ -43,6 +45,8 @@ function App() {
             <Route path="/training" element={<Training />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/gallery" element={<Gallery />} />
+            <Route path="/director" element={<Director />} />
+            <Route path="/research" element={<Research />} />
           </Routes>
           <Footer />
         </div>

@@ -1,23 +1,24 @@
 import PageBanner from '../components/PageBanner'
+import mobileClinicBg from '../assets/images/bg3.webp'
 import { Link } from 'react-router-dom'
 
 const campImages = [
-    new URL('../assets/images/cam1.jpg', import.meta.url).href,
-    new URL('../assets/images/cam2.jpg', import.meta.url).href,
-    new URL('../assets/images/cam3.jpg', import.meta.url).href,
-    new URL('../assets/images/cam4.jpg', import.meta.url).href,
-    new URL('../assets/images/cam5.jpg', import.meta.url).href,
-    new URL('../assets/images/cam6.jpg', import.meta.url).href,
-    new URL('../assets/images/cam7.jpg', import.meta.url).href,
-    new URL('../assets/images/cam8.jpg', import.meta.url).href,
+    new URL('../assets/images/cam1.webp', import.meta.url).href,
+    new URL('../assets/images/cam2.webp', import.meta.url).href,
+    new URL('../assets/images/cam3.webp', import.meta.url).href,
+    new URL('../assets/images/cam4.webp', import.meta.url).href,
+    new URL('../assets/images/cam5.webp', import.meta.url).href,
+    new URL('../assets/images/cam6.webp', import.meta.url).href,
+    new URL('../assets/images/cam7.webp', import.meta.url).href,
+    new URL('../assets/images/cam8.webp', import.meta.url).href,
 ]
 
 export default function MobileClinic() {
     return (
-        <main className="bg-white dark:bg-gray-900">
+        <main className="bg-white dark:bg-transparent">
             <PageBanner
                 title="Mobile Dental Clinic"
-                bgImage={new URL('../assets/images/bg3.jpg', import.meta.url).href}
+                bgImage={mobileClinicBg}
             />
 
             {/* Hero Service */}
@@ -54,7 +55,7 @@ export default function MobileClinic() {
                         </div>
                         <div className="flex-shrink-0 w-full lg:w-[450px]">
                             <img
-                                src={new URL('../assets/images/bg3.jpg', import.meta.url).href}
+                                src={new URL('../assets/images/bg3.webp', import.meta.url).href}
                                 alt="Mobile Dental Unit"
                                 className="radius-image shadow-2xl w-full h-auto object-cover"
                             />
@@ -64,7 +65,7 @@ export default function MobileClinic() {
             </section>
 
             {/* Impact Section */}
-            <section className="py-16 bg-gray-50 dark:bg-gray-800">
+            <section className="py-16 bg-gray-50 dark:bg-white/5">
                 <div className="container mx-auto px-4">
                     <div className="flex flex-col lg:flex-row-reverse gap-12 items-center">
                         <div className="flex-1">
@@ -73,7 +74,7 @@ export default function MobileClinic() {
                             <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
                                 Through our "Malviya Seva Prakalp" and other community initiatives, we have successfully treated thousands of patients who otherwise had no access to dental professionals.
                             </p>
-                            <div className="bg-white dark:bg-gray-900 p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 mb-8">
+                            <div className="bg-white dark:bg-white/10 dark:backdrop-blur-sm p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-white/5 mb-8">
                                 <blockquote className="italic text-gray-700 dark:text-gray-300 mb-4">
                                     "The mobile clinic brought relief to our village where even basics were hard to find. The doctors were professional and compassionate."
                                 </blockquote>
@@ -82,7 +83,7 @@ export default function MobileClinic() {
                         </div>
                         <div className="flex-shrink-0 w-full lg:w-[450px]">
                             <img
-                                src={new URL('../assets/images/camp1.jpg', import.meta.url).href}
+                                src={new URL('../assets/images/camp1.webp', import.meta.url).href}
                                 alt="Dental Camp"
                                 className="radius-image shadow-2xl w-full h-auto object-cover"
                             />

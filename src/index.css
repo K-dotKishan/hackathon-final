@@ -2,6 +2,11 @@
 
 @theme {
   --font-quicksand: "Quicksand", sans-serif;
+  --color-navy-900: #0b1220;
+  --color-navy-800: #0f1a2f;
+  --color-navy-700: #0b1324;
+  --color-premium-gray: #a9b4c7;
+  --color-accent-yellow: #ffc107;
 }
 
 @custom-variant dark (&:where(.dark, .dark *));
@@ -12,11 +17,34 @@
   --accent-color: #ffc107;
   --text-dark: #2c3e50;
   --text-light: #7f8c8d;
+  --dark-bg-gradient: linear-gradient(180deg, #0b1220 0%, #0f1a2f 50%, #0b1324 100%);
+  --dark-heading: #ffffff;
+  --dark-text: #a9b4c7;
 }
 
 body {
   font-family: var(--font-quicksand);
   scroll-behavior: smooth;
+  @apply bg-white text-gray-800 transition-colors duration-300;
+}
+
+.dark {
+  background: var(--dark-bg-gradient) fixed;
+  color: var(--dark-text);
+}
+
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark h5,
+.dark h6 {
+  color: #ffffff !important;
+}
+
+.dark p,
+.dark span:not(.btn-primary-custom *):not(.badge *) {
+  color: #a9b4c7 !important;
 }
 
 /* Custom Typography */
@@ -38,7 +66,7 @@ body {
 }
 
 .dark .title-w3l {
-  color: #f7fafc;
+  color: var(--dark-heading);
 }
 
 .title-left {
@@ -49,7 +77,7 @@ body {
 }
 
 .dark .title-left {
-  color: #f7fafc;
+  color: var(--dark-heading);
 }
 
 /* Buttons */
@@ -97,7 +125,7 @@ section {
 
 /* Cards */
 .box-card {
-  @apply p-8 rounded-2xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300;
+  @apply p-8 rounded-2xl bg-white dark:bg-gray-900/50 dark:backdrop-blur-sm border border-gray-100 dark:border-white/5 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300;
 }
 
 .stats-bg {

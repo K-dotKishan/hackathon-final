@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 export default function BoneGrafts() {
     return (
-        <main className="bg-white dark:bg-gray-900">
+        <main className="bg-white dark:bg-transparent">
             <PageBanner title="Bone Graft Materials" />
 
             {/* Hero Section */}
@@ -40,7 +40,7 @@ export default function BoneGrafts() {
                         <div className="flex-shrink-0 w-full lg:w-[450px]">
                             <div className="relative">
                                 <img
-                                    src={new URL('../assets/images/bg1.jpg', import.meta.url).href}
+                                    src={new URL('../assets/images/bg1.webp', import.meta.url).href}
                                     alt="Bone Grafting Solutions"
                                     className="radius-image shadow-2xl w-full h-auto object-cover"
                                 />
@@ -51,7 +51,7 @@ export default function BoneGrafts() {
             </section>
 
             {/* Educational Content */}
-            <section className="py-16 bg-gray-50 dark:bg-gray-800">
+            <section className="py-16 bg-gray-50 dark:bg-white/5">
                 <div className="container mx-auto px-4">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                         <div>
@@ -70,7 +70,7 @@ export default function BoneGrafts() {
                                 { label: 'Affordable', icon: 'fa-tag', desc: 'Making advanced care accessible to all patients.' },
                                 { label: 'Proven', icon: 'fa-check-circle', desc: 'Used in over 1000+ successful cases.' },
                             ].map((item, i) => (
-                                <div key={i} className="bg-white dark:bg-gray-900 p-6 rounded-2xl shadow-sm">
+                                <div key={i} className="bg-white dark:bg-white/5 p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-white/10">
                                     <i className={`fa ${item.icon} text-2xl text-blue-600 mb-3`}></i>
                                     <h5 className="font-bold text-gray-800 dark:text-white mb-1">{item.label}</h5>
                                     <p className="text-xs text-gray-500">{item.desc}</p>
@@ -87,9 +87,9 @@ export default function BoneGrafts() {
                     <span className="title-subhny text-center block mb-2">Clinical Insights</span>
                     <h3 className="title-w3l text-center mb-10">Educational Resources</h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div className="bg-white dark:bg-gray-900 rounded-2xl overflow-hidden shadow-md flex flex-col">
+                        <div className="bg-white dark:bg-white/5 rounded-2xl overflow-hidden shadow-md flex flex-col border border-gray-100 dark:border-white/10">
                             <img
-                                src={new URL('../assets/images/b4.jpg', import.meta.url).href}
+                                src={new URL('../assets/images/b4.webp', import.meta.url).href}
                                 className="w-full h-48 object-cover"
                                 alt="Case Study"
                             />
@@ -101,9 +101,9 @@ export default function BoneGrafts() {
                                 <Link to="/training" className="text-blue-600 font-bold hover:underline">Read Full Clinical Report →</Link>
                             </div>
                         </div>
-                        <div className="bg-white dark:bg-gray-900 rounded-2xl overflow-hidden shadow-md flex flex-col">
+                        <div className="bg-white dark:bg-white/5 rounded-2xl overflow-hidden shadow-md flex flex-col border border-gray-100 dark:border-white/10">
                             <img
-                                src={new URL('../assets/images/b5.jpg', import.meta.url).href}
+                                src={new URL('../assets/images/b5.webp', import.meta.url).href}
                                 className="w-full h-48 object-cover"
                                 alt="Procedures"
                             />

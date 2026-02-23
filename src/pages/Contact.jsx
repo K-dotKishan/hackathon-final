@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import PageBanner from '../components/PageBanner'
+import contactBg from '../assets/images/contact.webp'
 
 export default function Contact() {
     const [form, setForm] = useState({
@@ -29,23 +30,22 @@ export default function Contact() {
     }
 
     return (
-        <main className="bg-white dark:bg-gray-900">
+        <main className="bg-white dark:bg-transparent">
             <PageBanner
                 title="Contact Us"
-                bgImage={new URL('../assets/images/contact.jpg', import.meta.url).href}
+                bgImage={contactBg}
             />
 
             {/* Contact Form + Image */}
-            <section className="py-16 bg-white dark:bg-gray-900">
+            <section className="py-16 bg-white dark:bg-transparent">
                 <div className="container mx-auto px-4">
-                    <span className="title-subhny text-center block mb-2">Send a Message</span>
-                    <h3 className="title-w3l text-center mb-10">Contact Us</h3>
+                    {/* Main content starts here */}
 
                     <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-start">
                         {/* Image */}
                         <div className="flex-shrink-0 w-full lg:w-80 xl:w-96">
                             <img
-                                src={new URL('../assets/images/contact.jpg', import.meta.url).href}
+                                src={contactBg}
                                 alt="Contact"
                                 className="radius-image shadow-xl w-full h-auto"
                             />
@@ -128,7 +128,7 @@ export default function Contact() {
             </section>
 
             {/* Address Info */}
-            <section className="py-16 bg-gray-50 dark:bg-gray-800">
+            <section className="py-16 bg-gray-50 dark:bg-white/5">
                 <div className="container mx-auto px-4">
                     <span className="title-subhny text-center block mb-2">Find Us</span>
                     <h3 className="title-w3l text-center mb-10">Address Info</h3>
@@ -173,7 +173,7 @@ export default function Contact() {
                         ].map((item, idx) => (
                             <div
                                 key={idx}
-                                className="bg-white dark:bg-gray-900 rounded-xl p-6 shadow-md flex items-start gap-4 hover:shadow-lg transition-shadow"
+                                className="bg-white dark:bg-white/10 dark:backdrop-blur-sm rounded-xl p-6 shadow-md flex items-start gap-4 hover:shadow-lg transition-shadow border border-transparent dark:border-white/5"
                             >
                                 <div
                                     className={`w-12 h-12 rounded-full ${item.color} flex items-center justify-center flex-shrink-0`}
@@ -199,7 +199,7 @@ export default function Contact() {
             </section>
 
             {/* Map */}
-            <section className="bg-white dark:bg-gray-900 pb-16">
+            <section className="bg-white dark:bg-transparent pb-16">
                 <div className="container mx-auto px-4">
                     <div className="rounded-xl overflow-hidden shadow-xl">
                         <iframe

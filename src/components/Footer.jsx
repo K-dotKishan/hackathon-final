@@ -2,12 +2,12 @@ import { Link } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 
 const instagramImages = [
-  new URL('../assets/images/b1.jpg', import.meta.url).href,
-  new URL('../assets/images/b2.jpg', import.meta.url).href,
-  new URL('../assets/images/b3.jpg', import.meta.url).href,
-  new URL('../assets/images/b4.jpg', import.meta.url).href,
-  new URL('../assets/images/b5.jpg', import.meta.url).href,
-  new URL('../assets/images/b6.jpg', import.meta.url).href,
+  new URL('../assets/images/b1.webp', import.meta.url).href,
+  new URL('../assets/images/b2.webp', import.meta.url).href,
+  new URL('../assets/images/b3.webp', import.meta.url).href,
+  new URL('../assets/images/b4.webp', import.meta.url).href,
+  new URL('../assets/images/b5.webp', import.meta.url).href,
+  new URL('../assets/images/b6.webp', import.meta.url).href,
 ]
 
 export default function Footer() {

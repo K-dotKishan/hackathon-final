@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 export default function Implants() {
     return (
-        <main className="bg-white dark:bg-gray-900">
+        <main className="bg-white dark:bg-transparent">
             <PageBanner title="Dental Implants" />
 
             {/* Main Feature */}
@@ -41,7 +41,7 @@ export default function Implants() {
                         <div className="flex-shrink-0 w-full lg:w-[500px]">
                             <div className="relative">
                                 <img
-                                    src={new URL('../assets/images/bg2.jpg', import.meta.url).href}
+                                    src={new URL('../assets/images/bg2.webp', import.meta.url).href}
                                     alt="Dental Implants"
                                     className="radius-image shadow-2xl w-full h-auto object-cover"
                                 />
@@ -56,7 +56,7 @@ export default function Implants() {
             </section>
 
             {/* Why Choose Our Implants */}
-            <section className="py-16 bg-gray-50 dark:bg-gray-800">
+            <section className="py-16 bg-gray-50 dark:bg-white/5">
                 <div className="container mx-auto px-4">
                     <div className="text-center max-w-3xl mx-auto mb-12">
                         <span className="title-subhny">Clinical Excellence</span>
@@ -69,7 +69,7 @@ export default function Implants() {
                             { title: 'Durability', desc: 'Tested and proven to withstand long-term occlusal loads.' },
                             { title: 'Aesthetics', desc: 'Designed to support natural-looking restorative outcomes.' },
                         ].map((item, i) => (
-                            <div key={i} className="box-card">
+                            <div key={i} className="box-card dark:bg-white/10 dark:backdrop-blur-sm border-transparent dark:border-white/5">
                                 <h4 className="text-xl font-bold mb-3 text-blue-600">{item.title}</h4>
                                 <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">{item.desc}</p>
                             </div>

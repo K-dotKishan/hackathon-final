@@ -1,12 +1,13 @@
 import PageBanner from '../components/PageBanner'
+import productsBg from '../assets/images/bg2.webp'
 import { Link } from 'react-router-dom'
 
 export default function Products() {
     return (
-        <main className="bg-white dark:bg-gray-900">
+        <main className="bg-white dark:bg-transparent">
             <PageBanner
                 title="Product Palette"
-                bgImage={new URL('../assets/images/bg2.jpg', import.meta.url).href}
+                bgImage={productsBg}
             />
 
             {/* Main Intro */}
@@ -21,14 +22,14 @@ export default function Products() {
             </section>
 
             {/* Product Categories */}
-            <section className="py-16 bg-gray-50 dark:bg-gray-800">
+            <section className="py-16 bg-gray-50 dark:bg-white/5">
                 <div className="container mx-auto px-4">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                         {/* Category 1: Implants */}
-                        <div className="bg-white dark:bg-gray-900 rounded-3xl shadow-xl overflow-hidden group">
+                        <div className="bg-white dark:bg-white/10 dark:backdrop-blur-md rounded-3xl shadow-xl overflow-hidden group border border-transparent dark:border-white/5">
                             <div className="relative h-64 overflow-hidden">
                                 <img
-                                    src={new URL('../assets/images/bg2.jpg', import.meta.url).href}
+                                    src={new URL('../assets/images/bg2.webp', import.meta.url).href}
                                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                                     alt="Dental Implants"
                                 />
@@ -44,10 +45,10 @@ export default function Products() {
                         </div>
 
                         {/* Category 2: Bone Grafts */}
-                        <div className="bg-white dark:bg-gray-900 rounded-3xl shadow-xl overflow-hidden group">
+                        <div className="bg-white dark:bg-white/10 dark:backdrop-blur-md rounded-3xl shadow-xl overflow-hidden group border border-transparent dark:border-white/5">
                             <div className="relative h-64 overflow-hidden">
                                 <img
-                                    src={new URL('../assets/images/bg1.jpg', import.meta.url).href}
+                                    src={new URL('../assets/images/bg1.webp', import.meta.url).href}
                                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                                     alt="Bone Grafts"
                                 />
@@ -94,7 +95,7 @@ export default function Products() {
                         </div>
                         <div className="flex-shrink-0 w-full lg:w-[450px]">
                             <img
-                                src={new URL('../assets/images/b2.jpg', import.meta.url).href}
+                                src={new URL('../assets/images/b2.webp', import.meta.url).href}
                                 className="radius-image shadow-2xl"
                                 alt="Product Support"
                             />

@@ -1,33 +1,34 @@
 import PageBanner from '../components/PageBanner'
 import { Link } from 'react-router-dom'
+import aboutBg from '../assets/images/bg.webp'
+import storyImg from '../assets/images/b1.webp'
 
 const teamMembers = [
-  { img: new URL('../assets/images/t1.jpg', import.meta.url).href, name: 'Dr. Rajesh Bansal', role: 'Founder Director (MDS, PhD)' },
-  { img: new URL('../assets/images/t6.jpg', import.meta.url).href, name: 'Prof. D. D. N. Singh', role: 'M.Sc, PhD' },
-  { img: new URL('../assets/images/t7.jpg', import.meta.url).href, name: 'Prof. Vakil Singh', role: 'M.Sc, PhD' },
-  { img: new URL('../assets/images/t8.jpg', import.meta.url).href, name: 'Prof. Monika Bansal', role: 'MDS, PhD (Periodontist)' },
-  { img: new URL('../assets/images/t2.jpg', import.meta.url).href, name: 'Mr. Dinesh Kumar', role: 'Founder and Charter Accountant' },
-  { img: new URL('../assets/images/t3.jpg', import.meta.url).href, name: 'Mr. P. Vishwakarma', role: 'CNC Operator' },
-  { img: new URL('../assets/images/t4.jpg', import.meta.url).href, name: 'Mr. Anshu Pandey', role: 'Assistant and CNC Operator' },
-  { img: new URL('../assets/images/robin.jpg', import.meta.url).href, name: 'Dr. Robin Kr. Chaube', role: 'Dental Officer' },
-  { img: new URL('../assets/images/sourav.jpg', import.meta.url).href, name: 'Dr. Sourav Kr. Vishwakarma', role: 'Graft. R&D Officer' },
+  { img: new URL('../assets/images/t1.webp', import.meta.url).href, name: 'Dr. Rajesh Bansal', role: 'Founder Director (MDS, PhD)' },
+  { img: new URL('../assets/images/t6.webp', import.meta.url).href, name: 'Prof. D. D. N. Singh', role: 'M.Sc, PhD' },
+  { img: new URL('../assets/images/t7.webp', import.meta.url).href, name: 'Prof. Vakil Singh', role: 'M.Sc, PhD' },
+  { img: new URL('../assets/images/t8.webp', import.meta.url).href, name: 'Prof. Monika Bansal', role: 'MDS, PhD (Periodontist)' },
+  { img: new URL('../assets/images/t2.webp', import.meta.url).href, name: 'Mr. Dinesh Kumar', role: 'Founder and Charter Accountant' },
+  { img: new URL('../assets/images/t3.webp', import.meta.url).href, name: 'Mr. P. Vishwakarma', role: 'CNC Operator' },
+  { img: new URL('../assets/images/t4.webp', import.meta.url).href, name: 'Mr. Anshu Pandey', role: 'Assistant and CNC Operator' },
+  { img: new URL('../assets/images/robin.webp', import.meta.url).href, name: 'Dr. Robin Kr. Chaube', role: 'Dental Officer' },
+  { img: new URL('../assets/images/sourav.webp', import.meta.url).href, name: 'Dr. Sourav Kr. Vishwakarma', role: 'Graft. R&D Officer' },
 ]
 
 export default function About() {
   return (
-    <main className="bg-white dark:bg-gray-900">
+    <main className="bg-white dark:bg-transparent">
       <PageBanner
         title="About Us"
-        bgImage={new URL('../assets/images/bg.jpg', import.meta.url).href}
+        bgImage={aboutBg}
       />
 
       {/* Why Choose Kindway */}
-      <section className="py-16 bg-white dark:bg-gray-900">
+      <section className="py-16 bg-white dark:bg-transparent">
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-start">
             <div className="flex-1">
-              <span className="title-subhny">Why Choose</span>
-              <h3 className="title-left mb-5">Kindway Biorezens</h3>
+              {/* Main content starts here */}
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
                 At Kindway Biorezens, we are driven by a mission to reshape the future of dentistry
                 through innovation, accessibility, and compassionate care. As a pioneering startup in
@@ -70,7 +71,7 @@ export default function About() {
             </div>
             <div className="flex-shrink-0 w-full lg:w-96 mt-4 lg:mt-10">
               <img
-                src={new URL('../assets/images/b3.jpg', import.meta.url).href}
+                src={new URL('../assets/images/b3.webp', import.meta.url).href}
                 alt="Kindway"
                 className="radius-image shadow-xl w-full h-auto"
               />
@@ -80,7 +81,7 @@ export default function About() {
       </section>
 
       {/* Our Story */}
-      <section className="py-16 bg-gray-50 dark:bg-gray-800">
+      <section className="py-16 bg-gray-50 dark:bg-white/5">
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-start">
             <div className="flex-1">
@@ -113,7 +114,7 @@ export default function About() {
             </div>
             <div className="flex-shrink-0 w-full lg:w-96 mt-4 lg:mt-10">
               <img
-                src={new URL('../assets/images/b1.jpg', import.meta.url).href}
+                src={storyImg}
                 alt="Our Story"
                 className="radius-image shadow-xl w-full h-auto"
               />
@@ -123,14 +124,14 @@ export default function About() {
       </section>
 
       {/* Team */}
-      <section className="py-16 bg-white dark:bg-gray-900">
+      <section className="py-16 bg-white dark:bg-transparent">
         <div className="container mx-auto px-4">
           <span className="title-subhny text-center block mb-2">Our Team</span>
           <h3 className="title-w3l text-center mb-10">Executive Team & Advisors</h3>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
             {teamMembers.map((member, idx) => (
               <div key={idx} className="text-center group">
-                <div className="overflow-hidden rounded-xl mb-3 shadow-md bg-gray-100 dark:bg-gray-800">
+                <div className="overflow-hidden rounded-xl mb-3 shadow-md bg-gray-100 dark:bg-white/10">
                   <img
                     src={member.img}
                     alt={member.name}
@@ -149,7 +150,7 @@ export default function About() {
                     <a
                       key={icon}
                       href="#"
-                      className="w-7 h-7 flex items-center justify-center rounded-full bg-gray-100 dark:bg-gray-700 hover:bg-blue-600 hover:text-white text-gray-600 dark:text-gray-400 transition-all duration-200 text-xs"
+                      className="w-7 h-7 flex items-center justify-center rounded-full bg-gray-100 dark:bg-white/10 hover:bg-blue-600 hover:text-white text-gray-600 dark:text-gray-400 transition-all duration-200 text-xs"
                     >
                       <i className={`fa ${icon}`}></i>
                     </a>

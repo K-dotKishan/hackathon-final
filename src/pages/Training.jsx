@@ -1,25 +1,26 @@
 import PageBanner from '../components/PageBanner'
 import { Link } from 'react-router-dom'
+import trainingBg from '../assets/images/bg1.webp'
 
 const trainingImages = [
-  new URL('../assets/images/team1.jpg', import.meta.url).href,
-  new URL('../assets/images/team2.jpg', import.meta.url).href,
-  new URL('../assets/images/team3.jpg', import.meta.url).href,
-  new URL('../assets/images/team4.jpg', import.meta.url).href,
-  new URL('../assets/images/team0.jpg', import.meta.url).href,
-  new URL('../assets/images/team5.jpg', import.meta.url).href,
-  new URL('../assets/images/team6.jpg', import.meta.url).href,
-  new URL('../assets/images/team7.jpg', import.meta.url).href,
+  new URL('../assets/images/team1.webp', import.meta.url).href,
+  new URL('../assets/images/team2.webp', import.meta.url).href,
+  new URL('../assets/images/team3.webp', import.meta.url).href,
+  new URL('../assets/images/team4.webp', import.meta.url).href,
+  new URL('../assets/images/team0.webp', import.meta.url).href,
+  new URL('../assets/images/team5.webp', import.meta.url).href,
+  new URL('../assets/images/team6.webp', import.meta.url).href,
+  new URL('../assets/images/team7.webp', import.meta.url).href,
 ]
 
 export default function Training() {
   return (
-    <main className="bg-white dark:bg-gray-900">
+    <main className="bg-white dark:bg-transparent">
       <PageBanner
         title="Training"
-        bgImage={new URL('../assets/images/bg1.jpg', import.meta.url).href}
+        bgImage={trainingBg}
       />
-      <section className="py-16 bg-white dark:bg-gray-900">
+      <section className="py-16 bg-white dark:bg-transparent">
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-center">
             <div className="flex-1">
@@ -34,12 +35,12 @@ export default function Training() {
               <Link to="/contact" className="btn-primary-custom">Enroll Now</Link>
             </div>
             <div className="flex-shrink-0 w-full lg:w-96">
-              <img src={new URL('../assets/images/ex2.jpg', import.meta.url).href} alt="Training" className="radius-image shadow-xl w-full h-auto" />
+              <img src={new URL('../assets/images/ex2.webp', import.meta.url).href} alt="Training" className="radius-image shadow-xl w-full h-auto" />
             </div>
           </div>
         </div>
       </section>
-      <section className="py-16 bg-gray-50 dark:bg-gray-800">
+      <section className="py-16 bg-gray-50 dark:bg-white/5">
         <div className="container mx-auto px-4">
           <span className="title-subhny text-center block mb-2">Our Programs</span>
           <h3 className="title-w3l text-center mb-10">What We Offer</h3>
@@ -61,7 +62,7 @@ export default function Training() {
         </div>
       </section>
       {/* Event Calendar */}
-      <section className="py-20 bg-white dark:bg-gray-900 border-t border-gray-100 dark:border-gray-800">
+      <section className="py-20 bg-white dark:bg-transparent border-t border-gray-100 dark:border-white/5">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <span className="title-subhny">Upcoming Events</span>
@@ -76,7 +77,7 @@ export default function Training() {
               { date: 'April 22-25', month: 'APR', title: 'Mobile Clinic Outreach: Rural Uttar Pradesh', type: 'Community Program', location: 'Gorakhpur Region' },
               { date: 'May 10', month: 'MAY', title: 'CBCT Guided Surgery Planning', type: 'Webinar / Online', location: 'Digital Portal' },
             ].map((ev, i) => (
-              <div key={i} className="flex flex-col sm:flex-row items-center gap-6 p-6 bg-gray-50 dark:bg-gray-800 rounded-2xl border border-transparent hover:border-blue-400 transition-all group">
+              <div key={i} className="flex flex-col sm:flex-row items-center gap-6 p-6 bg-gray-50 dark:bg-white/10 dark:backdrop-blur-sm rounded-2xl border border-transparent hover:border-blue-400 transition-all group">
                 <div className="w-20 h-20 bg-blue-600 text-white flex flex-col items-center justify-center rounded-2xl shadow-lg ring-4 ring-blue-600/10">
                   <span className="text-xs font-bold opacity-80">{ev.month}</span>
                   <span className="text-2xl font-black">{ev.date.split(' ')[1]?.split('-')[0] || ev.date.split(' ')[1]}</span>
@@ -90,7 +91,7 @@ export default function Training() {
                 </div>
                 <button
                   onClick={() => document.getElementById('register-section').scrollIntoView({ behavior: 'smooth' })}
-                  className="px-6 py-2 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl font-bold text-blue-600 hover:bg-blue-600 hover:text-white transition-all shadow-sm"
+                  className="px-6 py-2 bg-white dark:bg-transparent border border-gray-200 dark:border-white/10 rounded-xl font-bold text-blue-600 hover:bg-blue-600 hover:text-white transition-all shadow-sm"
                 >
                   Save Spot
                 </button>
@@ -153,7 +154,7 @@ export default function Training() {
         </div>
       </section>
 
-      <section className="py-16 bg-gray-50 dark:bg-gray-800">
+      <section className="py-16 bg-gray-50 dark:bg-white/5">
         <div className="container mx-auto px-4">
           <span className="title-subhny text-center block mb-2">Highlights</span>
           <h3 className="title-w3l text-center mb-10">Training Gallery</h3>

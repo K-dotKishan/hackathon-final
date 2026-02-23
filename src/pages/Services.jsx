@@ -2,31 +2,31 @@ import PageBanner from '../components/PageBanner'
 import { Link } from 'react-router-dom'
 
 const trainingImages = [
-  new URL('../assets/images/team1.jpg', import.meta.url).href,
-  new URL('../assets/images/team2.jpg', import.meta.url).href,
-  new URL('../assets/images/team3.jpg', import.meta.url).href,
-  new URL('../assets/images/team4.jpg', import.meta.url).href,
-  new URL('../assets/images/team0.jpg', import.meta.url).href,
-  new URL('../assets/images/team5.jpg', import.meta.url).href,
-  new URL('../assets/images/team6.jpg', import.meta.url).href,
-  new URL('../assets/images/team7.jpg', import.meta.url).href,
+  new URL('../assets/images/team1.webp', import.meta.url).href,
+  new URL('../assets/images/team2.webp', import.meta.url).href,
+  new URL('../assets/images/team3.webp', import.meta.url).href,
+  new URL('../assets/images/team4.webp', import.meta.url).href,
+  new URL('../assets/images/team0.webp', import.meta.url).href,
+  new URL('../assets/images/team5.webp', import.meta.url).href,
+  new URL('../assets/images/team6.webp', import.meta.url).href,
+  new URL('../assets/images/team7.webp', import.meta.url).href,
 ]
 const campImages = [
-  new URL('../assets/images/cam1.jpg', import.meta.url).href,
-  new URL('../assets/images/cam2.jpg', import.meta.url).href,
-  new URL('../assets/images/cam3.jpg', import.meta.url).href,
-  new URL('../assets/images/cam4.jpg', import.meta.url).href,
-  new URL('../assets/images/cam5.jpg', import.meta.url).href,
-  new URL('../assets/images/cam6.jpg', import.meta.url).href,
-  new URL('../assets/images/cam7.jpg', import.meta.url).href,
-  new URL('../assets/images/cam8.jpg', import.meta.url).href,
+  new URL('../assets/images/cam1.webp', import.meta.url).href,
+  new URL('../assets/images/cam2.webp', import.meta.url).href,
+  new URL('../assets/images/cam3.webp', import.meta.url).href,
+  new URL('../assets/images/cam4.webp', import.meta.url).href,
+  new URL('../assets/images/cam5.webp', import.meta.url).href,
+  new URL('../assets/images/cam6.webp', import.meta.url).href,
+  new URL('../assets/images/cam7.webp', import.meta.url).href,
+  new URL('../assets/images/cam8.webp', import.meta.url).href,
 ]
 
 export default function Services() {
   return (
-    <main className="bg-white dark:bg-gray-900">
+    <main className="bg-white dark:bg-transparent">
       <PageBanner title="Services" />
-      <section className="py-16 bg-white dark:bg-gray-900">
+      <section className="py-16 bg-white dark:bg-transparent">
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-center">
             <div className="flex-1">
@@ -38,12 +38,12 @@ export default function Services() {
               <Link to="/about" className="btn-primary-custom">Read More</Link>
             </div>
             <div className="flex-shrink-0 w-full lg:w-96">
-              <img src={new URL('../assets/images/bg3.jpg', import.meta.url).href} alt="Outreach Dental Camp" className="radius-image shadow-xl w-full h-auto" />
+              <img src={new URL('../assets/images/bg3.webp', import.meta.url).href} alt="Outreach Dental Camp" className="radius-image shadow-xl w-full h-auto" />
             </div>
           </div>
         </div>
       </section>
-      <section className="py-16 bg-gray-50 dark:bg-gray-800">
+      <section className="py-16 bg-gray-50 dark:bg-white/5">
         <div className="container mx-auto px-4">
           <span className="title-subhny text-center block mb-2">KINDWAY BIOREZEN</span>
           <h3 className="title-w3l text-center mb-10">Available Training Gallery</h3>
@@ -56,7 +56,7 @@ export default function Services() {
           </div>
         </div>
       </section>
-      <section className="py-16 bg-white dark:bg-gray-900">
+      <section className="py-16 bg-white dark:bg-transparent">
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-center">
             <div className="flex-1">
@@ -68,12 +68,12 @@ export default function Services() {
               <Link to="/contact" className="btn-primary-custom">Contact Us</Link>
             </div>
             <div className="flex-shrink-0 w-full lg:w-96">
-              <img src={new URL('../assets/images/camp1.jpg', import.meta.url).href} alt="Dental Camp" className="radius-image shadow-xl w-full h-auto" />
+              <img src={new URL('../assets/images/camp1.webp', import.meta.url).href} alt="Dental Camp" className="radius-image shadow-xl w-full h-auto" />
             </div>
           </div>
         </div>
       </section>
-      <section className="py-16 bg-gray-50 dark:bg-gray-800">
+      <section className="py-16 bg-gray-50 dark:bg-white/5">
         <div className="container mx-auto px-4">
           <h3 className="title-w3l text-center mb-10">Workshop Gallery</h3>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">

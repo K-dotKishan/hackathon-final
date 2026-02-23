@@ -4,6 +4,8 @@ import { Link, useLocation } from 'react-router-dom'
 const navLinks = [
   { to: '/', label: 'Home' },
   { to: '/about', label: 'About Us' },
+  { to: '/director', label: 'Founder Director' },
+  { to: '/research', label: 'Global Research' },
   { to: '/products', label: 'Products' },
   { to: '/training', label: 'Training & Workshops' },
   { to: '/mobile-clinic', label: 'Mobile Clinic' },
@@ -72,7 +74,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
         </div>
       </div>
       <header
-        className={`fixed left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'top-0 bg-white dark:bg-gray-900 shadow-lg' : 'top-0 lg:top-8 bg-transparent'
+        className={`fixed left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'top-0 bg-white/90 dark:bg-black/40 backdrop-blur-md shadow-lg border-b border-white/5' : 'top-0 lg:top-8 bg-transparent'
           }`}
         style={{ background: scrolled ? undefined : 'linear-gradient(180deg, rgba(0,0,0,0.6) 0%, transparent 100%)' }}
       >
@@ -136,7 +138,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
             className={`lg:hidden transition-all duration-300 overflow-hidden ${isOpen ? 'max-h-screen opacity-100 pb-4' : 'max-h-0 opacity-0'
               }`}
           >
-            <nav className="flex flex-col bg-white dark:bg-gray-900 rounded-xl shadow-2xl mt-2 overflow-hidden">
+            <nav className="flex flex-col bg-white dark:bg-navy-900/95 dark:backdrop-blur-xl rounded-xl shadow-2xl mt-2 overflow-hidden border border-white/5">
               {navLinks.map(link => (
                 <Link
                   key={link.to}
@@ -144,7 +146,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
                   onClick={() => setIsOpen(false)}
                   className={`px-6 py-4 text-base font-semibold border-b border-gray-100 dark:border-gray-700 transition-all duration-200 ${isActive(link.to)
                     ? 'text-blue-600 bg-blue-50 dark:bg-blue-900/30 dark:text-blue-400'
-                    : 'text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-blue-600'
+                    : 'text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-blue-600'
                     }`}
                 >
                   {link.label}
@@ -153,7 +155,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
               {/* Mobile Dark Mode Toggle */}
               <button
                 onClick={() => setDarkMode(!darkMode)}
-                className="flex items-center justify-between px-6 py-4 text-base font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 transition-all"
+                className="flex items-center justify-between px-6 py-4 text-base font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-white/5 transition-all"
               >
                 <span>{darkMode ? 'Light Mode' : 'Dark Mode'}</span>
                 <i className={`fa ${darkMode ? 'fa-lightbulb-o text-yellow-500' : 'fa-moon-o text-blue-500'} text-lg`}></i>
