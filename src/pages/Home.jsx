@@ -244,8 +244,8 @@ export default function Home() {
               <div className="relative group">
                 <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-blue-400 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-300"></div>
                 <img
-                  src={directorImg}
-                  alt="Director"
+                  src={new URL('../assets/images/b1.webp', import.meta.url).href}
+                  alt="Founder Director"
                   className="relative rounded-2xl shadow-2xl w-full h-auto transform group-hover:scale-105 transition-transform duration-500 cursor-pointer"
                   loading="lazy"
                 />
@@ -615,7 +615,12 @@ export default function Home() {
                   <i className={`fa ${stat.icon} text-2xl text-yellow-300`}></i>
                 </div>
                 <div className="flex items-baseline justify-center gap-1 mb-2">
-                  <CountUp end={stat.count} className="text-4xl sm:text-5xl md:text-6xl font-bold text-yellow-300" />
+                  <CountUp
+                    key={`${stat.label}-${stat.count}`}
+                    start={Math.floor(Number(stat.count) * 0.95)}
+                    end={Number(stat.count)}
+                    className="text-4xl sm:text-5xl md:text-6xl font-bold text-yellow-300"
+                  />
                   <span className="text-yellow-300 text-3xl sm:text-4xl font-bold">+</span>
                 </div>
                 <h3 className="text-lg sm:text-xl font-bold text-white mb-2 tracking-tight">{stat.label}</h3>

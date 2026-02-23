@@ -36,49 +36,17 @@ body.dark {
   color: var(--dark-text);
 }
 
+.dark p {
+  color: var(--dark-text);
+}
+
 .dark h1,
 .dark h2,
 .dark h3,
 .dark h4,
 .dark h5,
-.dark h6,
-.dark strong,
-.dark b,
-.dark .title-w3l,
-.dark .title-left {
-  color: var(--dark-heading) !important;
-}
-
-.dark p,
-.dark span,
-.dark li,
-.dark label,
-.dark td,
-.dark th,
-.dark a:not([class*="btn-"]):not([class*="social-link"]),
-.dark div:not([class*="bg-white"]):not([class*="bg-blue-600"]):not([class*="bg-yellow-"]) {
-  color: var(--dark-text);
-}
-
-.dark .text-gray-600,
-.dark .text-gray-700,
-.dark .text-gray-800,
-.dark .text-gray-900 {
-  color: var(--dark-text) !important;
-}
-
-.dark .text-gray-500,
-.dark .text-gray-400 {
-  color: var(--dark-text-muted) !important;
-}
-
-/* Ensure icons are visible */
-.dark i:not(.text-accent-yellow):not(.text-blue-600):not(.fa-whatsapp) {
-  color: var(--dark-text-muted);
-}
-
-.dark a:not(.btn-primary-custom):not([class*="social-link"]) {
-  @apply hover:text-white transition-colors;
+.dark h6 {
+  color: #ffffff;
 }
 
 /* Custom Typography */
@@ -144,7 +112,7 @@ body.dark {
   }
 }
 
-section {
+main>section {
   animation: fadeInUp 0.8s ease-out forwards;
 }
 
@@ -187,4 +155,29 @@ section {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+/* WhatsApp Widget Fix */
+#whatsapp-widget,
+.whatsapp-widget,
+[id*="gallabox"],
+[class*="gallabox"],
+[id*="gb-"],
+[class*="gb-"],
+iframe[src*="gallabox"] {
+  z-index: 999999 !important;
+  pointer-events: auto !important;
+  visibility: visible !important;
+  display: block !important;
+}
+
+/* Ensure children within the widget are also clickable and visible */
+#whatsapp-widget *,
+.whatsapp-widget *,
+[id*="gallabox"] *,
+[class*="gallabox"] *,
+[id*="gb-"] *,
+[class*="gb-"] * {
+  pointer-events: auto !important;
+  visibility: visible !important;
 }

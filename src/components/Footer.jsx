@@ -155,41 +155,6 @@ export default function Footer() {
         </button>
       )}
 
-      {/* WhatsApp Widget */}
-      <WhatsAppWidget />
     </>
   )
-}
-
-function WhatsAppWidget() {
-  useEffect(() => {
-    const w = window
-    const d = document
-    const s = 'script'
-    const u = 'https://waw.gallabox.com'
-    w.gbwawc = {
-      url: u,
-      options: {
-        waId: '+91 91988 46529',
-        siteName: 'Kindway Biorezens',
-        siteTag: 'Innovation, Quality & Precision',
-        siteLogo: 'https://assets.gallabox.com/gb-home/wa-chat-widget/bot-logo-3.png',
-        widgetPosition: 'LEFT',
-        welcomeMessage: 'Welcome in Kindway Biorezens Pvt. Ltd.',
-        triggerMessage: 'Kindway Biorezens',
-        brandColor: '#25D366',
-        messageText: 'I am looking for a',
-        replyOptions: ['Order product to deliver my home', 'Workshop / Training'],
-        version: 'v1',
-        widgetPositionMarginX: '12',
-        widgetPositionMarginY: '12',
-      },
-    }
-    const h = d.getElementsByTagName(s)[0]
-    const j = d.createElement(s)
-    j.async = true
-    j.src = u + '/whatsapp-widget.min.js?_=2024-12-10 14'
-    h.parentNode.insertBefore(j, h)
-  }, [])
-  return null
 }

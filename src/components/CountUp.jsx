@@ -1,36 +1,52 @@
 import { useState, useEffect, useRef } from 'react'
 
-export default function CountUp({ end, className = '' }) {
-  const [count, setCount] = useState(0)
+export default function CountUp({ start = 0, end, duration = 2000, className = '' }) {
+  const [count, setCount] = useState(start)
   const ref = useRef(null)
-  const started = useRef(false)
+  const hasStarted = useRef(false)
 
   useEffect(() => {
+    // Force reset to start value on mount or prop change
+    setCount(start)
+    hasStarted.current = false
+
     const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting && !started.current) {
-          started.current = true
-          const duration = 2000
-          const steps = 60
-          const increment = end / steps
-          let current = 0
-          const timer = setInterval(() => {
-            current += increment
-            if (current >= end) {
-              setCount(end)
-              clearInterval(timer)
+      (entries) => {
+        const [entry] = entries
+        if (entry.isIntersecting && !hasStarted.current) {
+          hasStarted.current = true
+
+          let startTimestamp = null
+          const step = (timestamp) => {
+            if (!startTimestamp) startTimestamp = timestamp
+            const progress = Math.min((timestamp - startTimestamp) / duration, 1)
+
+            // Linear progress for debugging
+            const currentCount = Math.floor(progress * (end - start) + start)
+            setCount(currentCount)
+
+            if (progress < 1) {
+              window.requestAnimationFrame(step)
             } else {
-              setCount(Math.floor(current))
+              setCount(end)
             }
-          }, duration / steps)
+          }
+          window.requestAnimationFrame(step)
         }
       },
-      { threshold: 0.3 }
+      { threshold: 0.1 }
     )
+
     if (ref.current) observer.observe(ref.current)
-    return () => observer.disconnect()
-  }, [end])
+    return () => {
+      if (ref.current) observer.unobserve(ref.current)
+      observer.disconnect()
+    }
+  }, [start, end, duration])
 
-  return <span ref={ref} className={className}>{count.toLocaleString()}</span>
+  return (
+    <span ref={ref} className={className}>
+      {count.toLocaleString()}
+    </span>
+  )
 }
-
