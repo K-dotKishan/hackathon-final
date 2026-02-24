@@ -20,7 +20,7 @@ export default function Contact() {
     const handleSubmit = (e) => {
         e.preventDefault()
 
-        const mailtoUrl = `mailto:kishansingh2882004@gmail.com?subject=${encodeURIComponent(form.subject || 'Inquiry from Website')}&body=${encodeURIComponent(
+        const mailtoUrl = `mailto:rajeshbansal97@gmail.com?subject=${encodeURIComponent(form.subject || 'Inquiry from Website')}&body=${encodeURIComponent(
             `Name: ${form.name}\nEmail: ${form.email}\nWebsite: ${form.website}\n\nMessage:\n${form.message}`
         )}`;
 
@@ -160,15 +160,15 @@ export default function Contact() {
                             {
                                 icon: 'fa-envelope-o',
                                 title: 'Email Us',
-                                text: 'kishansingh2882004@gmail.com',
-                                link: 'mailto:kishansingh2882004@gmail.com',
+                                text: 'rajeshbansal97@gmail.com',
+                                link: 'mailto:rajeshbansal97@gmail.com',
                                 color: 'bg-blue-100 text-blue-600',
                             },
                             {
                                 icon: 'fa-life-ring',
                                 title: 'Customer Support',
-                                text: 'kishansingh2882004@gmail.com',
-                                link: 'mailto:kishansingh2882004@gmail.com',
+                                text: 'rajeshbansal97@gmail.com',
+                                link: 'mailto:rajeshbansal97@gmail.com',
                                 color: 'bg-purple-100 text-purple-600',
                             },
                         ].map((item, idx) => (

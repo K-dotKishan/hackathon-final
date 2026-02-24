@@ -60,7 +60,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
               <i className="fa fa-phone text-yellow-400"></i> +91-9151161267
             </span>
             <span className="flex items-center gap-2">
-              <i className="fa fa-envelope text-yellow-400"></i> kishansingh2882004@gmail.com
+              <i className="fa fa-envelope text-yellow-400"></i> rajeshbansal97@gmail.com
             </span>
             <span className="flex items-center gap-2">
               <i className="fa fa-map-marker text-yellow-400"></i> SAMNEGHAT, VARANASI
