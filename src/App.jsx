@@ -14,6 +14,7 @@ import Gallery from './pages/Gallery'
 import Director from './pages/Director'
 import Research from './pages/Research'
 import ScrollToTop from './components/ScrollToTop'
+import AIChatbot from './components/AIChatbot'
 
 function App() {
   const [darkMode, setDarkMode] = useState(() => {
@@ -49,6 +50,7 @@ function App() {
             <Route path="/research" element={<Research />} />
           </Routes>
           <Footer />
+          <AIChatbot />
         </div>
       </div>
     </HashRouter>

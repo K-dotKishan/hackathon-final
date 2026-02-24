@@ -147,7 +147,7 @@ main>section {
 }
 
 .back-to-top {
-  @apply fixed bottom-8 right-8 w-12 h-12 bg-blue-600 text-white rounded-xl shadow-2xl flex items-center justify-center cursor-pointer z-50 hover:bg-blue-700 transition-all hover:-translate-y-1;
+  @apply fixed bottom-24 right-8 w-12 h-12 bg-blue-600 text-white rounded-xl shadow-2xl flex items-center justify-center cursor-pointer z-50 hover:bg-blue-700 transition-all hover:-translate-y-1;
 }
 
 .line-clamp-2 {
