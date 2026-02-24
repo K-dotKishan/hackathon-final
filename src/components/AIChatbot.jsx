@@ -110,7 +110,7 @@ export default function AIChatbot() {
         <div className="fixed bottom-6 right-6 z-[99999]">
             {/* Chat Window */}
             {isOpen && (
-                <div className="absolute bottom-20 right-0 w-[calc(100vw-48px)] sm:w-[400px] h-[550px] max-h-[calc(100vh-120px)] bg-white dark:bg-navy-800 rounded-3xl shadow-2xl border border-gray-100 dark:border-white/10 overflow-hidden flex flex-col animate-in fade-in slide-in-from-bottom-10 duration-300">
+                <div className="absolute bottom-20 right-0 w-[calc(100vw-48px)] sm:w-[400px] h-[500px] sm:h-[550px] max-h-[calc(100vh-120px)] bg-white dark:bg-navy-800 rounded-3xl shadow-2xl border border-gray-100 dark:border-white/10 overflow-hidden flex flex-col animate-in fade-in slide-in-from-bottom-10 duration-300">
                     {/* Header */}
                     <div className="p-4 bg-gradient-to-r from-blue-600 to-blue-500 text-white flex justify-between items-center">
                         <div className="flex items-center gap-3">

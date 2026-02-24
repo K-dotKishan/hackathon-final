@@ -22,7 +22,7 @@ export default function MobileClinic() {
             />
 
             {/* Hero Service */}
-            <section className="py-16">
+            <section className="py-8">
                 <div className="container mx-auto px-4">
                     <div className="flex flex-col lg:flex-row gap-12 items-center">
                         <div className="flex-1">
@@ -65,7 +65,7 @@ export default function MobileClinic() {
             </section>
 
             {/* Impact Section */}
-            <section className="py-16 bg-gray-50 dark:bg-white/5">
+            <section className="py-8 bg-gray-50 dark:bg-white/5">
                 <div className="container mx-auto px-4">
                     <div className="flex flex-col lg:flex-row-reverse gap-12 items-center">
                         <div className="flex-1">
@@ -93,7 +93,7 @@ export default function MobileClinic() {
             </section>
 
             {/* Workshop Gallery */}
-            <section className="py-16">
+            <section className="py-8">
                 <div className="container mx-auto px-4">
                     <span className="title-subhny text-center block mb-2">Outreach Highlights</span>
                     <h3 className="title-w3l text-center mb-10">Mobile Clinic Gallery</h3>

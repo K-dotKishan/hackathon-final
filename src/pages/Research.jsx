@@ -46,7 +46,7 @@ export default function Research() {
             />
 
             {/* Global Reach Section */}
-            <section className="py-16 sm:py-20 bg-white dark:bg-transparent border-b border-gray-100 dark:border-white/5">
+            <section className="py-12 sm:py-10 bg-white dark:bg-transparent border-b border-gray-100 dark:border-white/5">
                 <div className="container mx-auto px-4">
                     <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-center">
                         <div className="flex-1">
@@ -82,7 +82,7 @@ export default function Research() {
             </section>
 
             {/* Research Papers Grid */}
-            <section className="py-16 sm:py-20 bg-gray-50 dark:bg-white/5">
+            <section className="py-12 sm:py-10 bg-gray-50 dark:bg-white/5">
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-12">
                         <h3 className="text-3xl font-bold text-gray-800 dark:text-white mb-4">Active Research & Whitepapers</h3>

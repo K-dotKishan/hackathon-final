@@ -20,7 +20,7 @@ export default function Training() {
         title="Training"
         bgImage={trainingBg}
       />
-      <section className="py-16 bg-white dark:bg-transparent">
+      <section className="py-16 sm:py-14 bg-white dark:bg-transparent">
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-center">
             <div className="flex-1">
@@ -40,7 +40,7 @@ export default function Training() {
           </div>
         </div>
       </section>
-      <section className="py-16 bg-gray-50 dark:bg-white/5">
+      <section className="py-12 bg-gray-50 dark:bg-white/5">
         <div className="container mx-auto px-4">
           <span className="title-subhny text-center block mb-2">Our Programs</span>
           <h3 className="title-w3l text-center mb-10">What We Offer</h3>
@@ -62,7 +62,7 @@ export default function Training() {
         </div>
       </section>
       {/* Event Calendar */}
-      <section className="py-20 bg-white dark:bg-transparent border-t border-gray-100 dark:border-white/5">
+      <section className="py-12 sm:py-10 bg-white dark:bg-transparent border-b border-gray-100 dark:border-white/5">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <span className="title-subhny">Upcoming Events</span>
@@ -102,7 +102,7 @@ export default function Training() {
       </section>
 
       {/* Online Registration form */}
-      <section id="register-section" className="py-20 bg-blue-900 text-white stats-bg">
+      <section id="register-section" className="py-12 bg-blue-900 text-white stats-bg">
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row gap-16 items-center">
             <div className="flex-1">
@@ -154,7 +154,7 @@ export default function Training() {
         </div>
       </section>
 
-      <section className="py-16 bg-gray-50 dark:bg-white/5">
+      <section className="py-12 bg-gray-50 dark:bg-white/5">
         <div className="container mx-auto px-4">
           <span className="title-subhny text-center block mb-2">Highlights</span>
           <h3 className="title-w3l text-center mb-10">Training Gallery</h3>

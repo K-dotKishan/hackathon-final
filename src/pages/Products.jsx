@@ -11,7 +11,7 @@ export default function Products() {
             />
 
             {/* Main Intro */}
-            <section className="py-20">
+            <section className="py-12 sm:py-10">
                 <div className="container mx-auto px-4 text-center max-w-4xl">
                     <span className="title-subhny">Innovation at Heart</span>
                     <h2 className="title-w3l mb-6">Pioneering Dental Biotech Solutions</h2>
@@ -22,7 +22,7 @@ export default function Products() {
             </section>
 
             {/* Product Categories */}
-            <section className="py-16 bg-gray-50 dark:bg-white/5">
+            <section className="py-12 sm:py-10 bg-gray-50 dark:bg-white/5">
                 <div className="container mx-auto px-4">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                         {/* Category 1: Implants */}
@@ -67,7 +67,7 @@ export default function Products() {
             </section>
 
             {/* Market Growth / Support */}
-            <section className="py-20">
+            <section className="py-12 sm:py-10">
                 <div className="container mx-auto px-4">
                     <div className="flex flex-col lg:flex-row gap-16 items-center">
                         <div className="flex-1">

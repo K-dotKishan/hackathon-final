@@ -10,7 +10,7 @@ export default function Gallery() {
   return (
     <main className="bg-white dark:bg-transparent">
       <PageBanner title="Gallery" />
-      <section className="py-16">
+      <section className="py-8">
         <div className="container mx-auto px-4 text-center">
           <span className="title-subhny block mb-2">Our Gallery</span>
           <h3 className="title-w3l mb-10">Step into a world of healthy smiles and exquisite dental artistry</h3>
@@ -30,7 +30,7 @@ export default function Gallery() {
         </div>
       </section>
 
-      <section className="py-16 bg-gray-50 dark:bg-white/5 border-t border-gray-100 dark:border-white/5">
+      <section className="py-8 bg-gray-50 dark:bg-white/5 border-t border-gray-100 dark:border-white/5">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <span className="title-subhny">Clinical Proof</span>

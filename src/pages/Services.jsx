@@ -26,7 +26,7 @@ export default function Services() {
   return (
     <main className="bg-white dark:bg-transparent">
       <PageBanner title="Services" />
-      <section className="py-16 bg-white dark:bg-transparent">
+      <section className="py-12 bg-white dark:bg-transparent">
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-center">
             <div className="flex-1">
@@ -43,7 +43,7 @@ export default function Services() {
           </div>
         </div>
       </section>
-      <section className="py-16 bg-gray-50 dark:bg-white/5">
+      <section className="py-12 bg-gray-50 dark:bg-white/5">
         <div className="container mx-auto px-4">
           <span className="title-subhny text-center block mb-2">KINDWAY BIOREZEN</span>
           <h3 className="title-w3l text-center mb-10">Available Training Gallery</h3>
@@ -56,7 +56,7 @@ export default function Services() {
           </div>
         </div>
       </section>
-      <section className="py-16 bg-white dark:bg-transparent">
+      <section className="py-12 bg-white dark:bg-transparent">
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-center">
             <div className="flex-1">
@@ -73,7 +73,7 @@ export default function Services() {
           </div>
         </div>
       </section>
-      <section className="py-16 bg-gray-50 dark:bg-white/5">
+      <section className="py-12 bg-gray-50 dark:bg-white/5">
         <div className="container mx-auto px-4">
           <h3 className="title-w3l text-center mb-10">Workshop Gallery</h3>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">

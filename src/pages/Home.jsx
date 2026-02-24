@@ -105,7 +105,7 @@ export default function Home() {
                       {slide.title}
                     </h2>
 
-                    <p className="text-gray-200 text-sm sm:text-base lg:text-lg leading-relaxed mb-6 lg:mb-8 max-w-lg">
+                    <p className="text-gray-200 text-sm sm:text-base lg:text-lg leading-relaxed mb-4 lg:mb-6 max-w-lg">
                       {slide.desc}
                     </p>
 
@@ -154,7 +154,7 @@ export default function Home() {
       </section>
 
       {/* Features Row */}
-      <section id="about" className="py-12 sm:py-14 bg-white dark:bg-transparent">
+      <section id="about" className="py-10 sm:py-8 bg-white dark:bg-transparent">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {[
@@ -212,7 +212,7 @@ export default function Home() {
       </section>
 
       {/* Mission & Vision */}
-      <section className="py-16 sm:py-20 bg-gradient-to-br from-gray-50 to-blue-50 dark:from-white/0 dark:to-white/0">
+      <section className="py-10 sm:py-10 bg-gradient-to-br from-gray-50 to-blue-50 dark:from-white/5 dark:to-white/5 overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-center">
             <div className="flex-1 space-y-8">
@@ -260,7 +260,7 @@ export default function Home() {
       </section>
 
       {/* Why Choose Kindway */}
-      <section className="py-16 sm:py-20 bg-white dark:bg-transparent">
+      <section className="py-10 sm:py-8 bg-white dark:bg-transparent">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-center">
             <div className="flex-1 order-2 lg:order-1">
@@ -298,7 +298,7 @@ export default function Home() {
       </section>
 
       {/* Pioneering Products */}
-      <section className="py-16 sm:py-20 bg-gradient-to-br from-gray-50 to-blue-50 dark:from-white/0 dark:to-white/0">
+      <section className="py-10 sm:py-10 bg-gradient-to-br from-gray-50 to-blue-50 dark:from-white/5 dark:to-white/5 overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-center">
             <div className="flex-shrink-0 w-full lg:w-96">
@@ -336,7 +336,7 @@ export default function Home() {
       </section>
 
       {/* Expertise */}
-      <section className="py-16 sm:py-20 bg-white dark:bg-transparent">
+      <section className="py-10 sm:py-8 bg-white dark:bg-transparent">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-center">
             <div className="flex-1">
@@ -367,7 +367,7 @@ export default function Home() {
       </section>
 
       {/* Training & Education */}
-      <section className="py-16 sm:py-20 bg-gradient-to-br from-gray-50 to-blue-50 dark:from-white/0 dark:to-white/0">
+      <section className="py-10 sm:py-10 bg-gradient-to-br from-gray-50 to-blue-50 dark:from-white/5 dark:to-white/5 overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-center">
             <div className="flex-shrink-0 w-full lg:w-96">
@@ -405,7 +405,7 @@ export default function Home() {
       </section>
 
       {/* Global Reach */}
-      <section className="py-16 sm:py-20 bg-white dark:bg-transparent">
+      <section className="py-10 sm:py-8 bg-white dark:bg-transparent">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-center">
             <div className="flex-1">
@@ -415,7 +415,7 @@ export default function Home() {
               <h3 className="text-3xl sm:text-4xl font-bold text-gray-800 dark:text-white mb-5">
                 Global Reach
               </h3>
-              <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-base sm:text-lg mb-6">
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-base sm:text-lg mb-8">
                 Our reach knows no boundaries. We proudly serve dental practitioners around the world, ensuring that our products and services are accessible to all.
               </p>
               <Link to="/research" className="inline-flex items-center gap-2 text-blue-600 font-bold hover:gap-3 transition-all group">
@@ -440,9 +440,9 @@ export default function Home() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-20 sm:py-24 bg-gradient-to-br from-gray-50 to-blue-50 dark:from-white/5 dark:to-white/5 overflow-hidden">
+      <section className="py-12 sm:py-12 bg-gradient-to-br from-gray-50 to-blue-50 dark:from-white/5 dark:to-white/5 overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
+          <div className="text-center mb-10">
             <span className="inline-block px-4 py-1.5 bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400 text-sm font-bold rounded-full mb-4">
               Social Proof
             </span>
@@ -506,9 +506,9 @@ export default function Home() {
       </section>
 
       {/* Clinical Insights / Blog */}
-      <section className="py-20 sm:py-24 bg-white dark:bg-transparent border-t border-gray-100 dark:border-white/10">
+      <section className="py-10 sm:py-10 bg-white dark:bg-transparent border-t border-gray-100 dark:border-white/10">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-6">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 gap-6">
             <div className="max-w-xl">
               <span className="inline-block px-4 py-1.5 bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400 text-sm font-bold rounded-full mb-4">
                 Educational Hub
@@ -586,7 +586,7 @@ export default function Home() {
       </section>
 
       {/* Stats */}
-      <section className="relative py-24 sm:py-32 overflow-hidden">
+      <section className="relative py-8 sm:py-12 overflow-hidden">
         {/* Background with Overlay */}
         <div className="absolute inset-0">
           <img
@@ -632,9 +632,9 @@ export default function Home() {
       </section>
 
       {/* Recent Activities */}
-      <section className="py-20 sm:py-24 bg-gradient-to-br from-gray-50 to-blue-50 dark:from-white/5 dark:to-white/5">
+      <section className="py-10 sm:py-12 bg-gradient-to-br from-gray-50 to-blue-50 dark:from-white/5 dark:to-white/5">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
+          <div className="text-center mb-10">
             <span className="inline-block px-4 py-1.5 bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400 text-sm font-bold rounded-full mb-4">
               Kindway
             </span>

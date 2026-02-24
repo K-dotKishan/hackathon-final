@@ -11,7 +11,7 @@ export default function Director() {
                 bgImage={bannerBg}
             />
 
-            <section className="py-16 sm:py-20 bg-white dark:bg-transparent">
+            <section className="py-12 sm:py-10 bg-white dark:bg-transparent">
                 <div className="container mx-auto px-4">
                     <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start">
                         {/* Director Image */}

@@ -7,7 +7,7 @@ export default function Implants() {
             <PageBanner title="Dental Implants" />
 
             {/* Main Feature */}
-            <section className="py-16">
+            <section className="py-8">
                 <div className="container mx-auto px-4">
                     <div className="flex flex-col lg:flex-row gap-12 items-center">
                         <div className="flex-1">
@@ -56,7 +56,7 @@ export default function Implants() {
             </section>
 
             {/* Why Choose Our Implants */}
-            <section className="py-16 bg-gray-50 dark:bg-white/5">
+            <section className="py-8 bg-gray-50 dark:bg-white/5">
                 <div className="container mx-auto px-4">
                     <div className="text-center max-w-3xl mx-auto mb-12">
                         <span className="title-subhny">Clinical Excellence</span>
@@ -79,7 +79,7 @@ export default function Implants() {
             </section>
 
             {/* CTA Section */}
-            <section className="py-20 bg-blue-900 text-white">
+            <section className="py-10 bg-blue-900 text-white">
                 <div className="container mx-auto px-4 text-center">
                     <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Upgrade Your Practice?</h2>
                     <p className="text-blue-200 mb-10 max-w-2xl mx-auto text-lg">

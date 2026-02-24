@@ -7,7 +7,7 @@ export default function BoneGrafts() {
             <PageBanner title="Bone Graft Materials" />
 
             {/* Hero Section */}
-            <section className="py-16">
+            <section className="py-8">
                 <div className="container mx-auto px-4">
                     <div className="flex flex-col lg:flex-row-reverse gap-12 items-center">
                         <div className="flex-1">
@@ -51,7 +51,7 @@ export default function BoneGrafts() {
             </section>
 
             {/* Educational Content */}
-            <section className="py-16 bg-gray-50 dark:bg-white/5">
+            <section className="py-8 bg-gray-50 dark:bg-white/5">
                 <div className="container mx-auto px-4">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                         <div>
@@ -82,7 +82,7 @@ export default function BoneGrafts() {
             </section>
 
             {/* Educational Blog Post Section */}
-            <section className="py-16">
+            <section className="py-8">
                 <div className="container mx-auto px-4">
                     <span className="title-subhny text-center block mb-2">Clinical Insights</span>
                     <h3 className="title-w3l text-center mb-10">Educational Resources</h3>

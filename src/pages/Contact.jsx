@@ -38,7 +38,7 @@ export default function Contact() {
             />
 
             {/* Contact Form + Image */}
-            <section className="py-16 bg-white dark:bg-transparent">
+            <section className="py-8 bg-white dark:bg-transparent">
                 <div className="container mx-auto px-4">
                     {/* Main content starts here */}
 
@@ -129,7 +129,7 @@ export default function Contact() {
             </section>
 
             {/* Address Info */}
-            <section className="py-16 bg-gray-50 dark:bg-white/5">
+            <section className="py-8 bg-gray-50 dark:bg-white/5">
                 <div className="container mx-auto px-4">
                     <span className="title-subhny text-center block mb-2">Find Us</span>
                     <h3 className="title-w3l text-center mb-10">Address Info</h3>
@@ -200,7 +200,7 @@ export default function Contact() {
             </section>
 
             {/* Map */}
-            <section className="bg-white dark:bg-transparent pb-16">
+            <section className="bg-white dark:bg-transparent pb-12">
                 <div className="container mx-auto px-4">
                     <div className="rounded-xl overflow-hidden shadow-xl">
                         <iframe

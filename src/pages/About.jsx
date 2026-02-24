@@ -24,7 +24,7 @@ export default function About() {
       />
 
       {/* Why Choose Kindway */}
-      <section className="py-16 bg-white dark:bg-transparent">
+      <section className="py-8 bg-white dark:bg-transparent">
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-start">
             <div className="flex-1">
@@ -81,7 +81,7 @@ export default function About() {
       </section>
 
       {/* Our Story */}
-      <section className="py-16 bg-gray-50 dark:bg-white/5">
+      <section className="py-8 bg-gray-50 dark:bg-white/5">
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-start">
             <div className="flex-1">
@@ -124,10 +124,10 @@ export default function About() {
       </section>
 
       {/* Team */}
-      <section className="py-16 bg-white dark:bg-transparent">
+      <section className="py-8 bg-white dark:bg-transparent">
         <div className="container mx-auto px-4">
           <span className="title-subhny text-center block mb-2">Our Team</span>
-          <h3 className="title-w3l text-center mb-10">Executive Team & Advisors</h3>
+          <h3 className="title-w3l text-center mb-8">Executive Team & Advisors</h3>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
             {teamMembers.map((member, idx) => (
               <div key={idx} className="text-center group">
